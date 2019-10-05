@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    <ion-title>Tambah Produk</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item>
+          <ion-label  position="stacked">Produk SKU <ion-text color="danger">*</ion-text></ion-label>
+          <ion-input required type="text" placeholder="KC1234"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label  position="stacked">Nama Produk <ion-text color="danger">*</ion-text></ion-label>
+            <ion-input required type="text" placeholder="Intel Core i7-8800"></ion-input>
+          </ion-item>
+        <ion-item>
+          <ion-label  position="stacked">Harga Beli <ion-text color="danger">*</ion-text></ion-label>
+          <ion-input required type="number" placeholder="1234000"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label  position="stacked">Harga Jual <ion-text color="danger">*</ion-text></ion-label>
+            <ion-input required type="number" placeholder="1122330"></ion-input>
+          </ion-item>
+        <ion-item>
+          <ion-label  position="floating">Merek</ion-label>
+          <ion-input  type="text" ></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label  position="stacked">Kategori <ion-text color="danger">*</ion-text></ion-label>
+            <ion-select interface="action-sheet">
+                <ion-select-option>Kategori 1</ion-select-option>
+                <ion-select-option>Kategori 2</ion-select-option>
+                <ion-select-option selected>Kategori 3</ion-select-option>
+                <ion-select-option>Kategori 4</ion-select-option>
+                <ion-select-option>Kategori 5</ion-select-option>
+            </ion-select>
+          </ion-item>
+        <ion-item>
+          <ion-label  position="stacked">Jumlah Stok <ion-text color="danger">*</ion-text></ion-label>
+          <ion-input required type="number" placeholder="10"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label  position="stacked">Deskripsi <ion-text color="danger">*</ion-text></ion-label>
+            <ion-textarea placeholder="lorem ipsum"></ion-textarea>
+          </ion-item>
+      </ion-list>
+
+      <div class="ion-padding">
+          <ion-button expand="block" type="submit" class="ion-no-margin">Simpan</ion-button>
+        </div>
+</ion-content>
